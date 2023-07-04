@@ -9,6 +9,7 @@ if ( have_posts() ) :
 ?>
 	<header class="page-header">
 		<h1 class="page-title"><?php printf( esc_html__( 'Category Archives: %s', 'boxmeow-ft' ), single_cat_title( '', false ) ); ?></h1>
+		<a>Test</a>
 		<?php
 			$category_description = category_description();
 			if ( ! empty( $category_description ) ) :

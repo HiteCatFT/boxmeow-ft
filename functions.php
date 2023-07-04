@@ -1,5 +1,6 @@
 <?php
 
+require_once dirname( __FILE__ ) . '/module/theme_panel/options-framework.php';
 /**
  * Include Theme Customizer.
  *
