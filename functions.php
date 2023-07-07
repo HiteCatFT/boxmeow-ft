@@ -1,6 +1,9 @@
 <?php
 
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/module/theme_panel/' );
 require_once dirname( __FILE__ ) . '/module/theme_panel/options-framework.php';
+require_once get_stylesheet_directory() . '/module/config/fun-admin.php';
+$optionsfile = locate_template( 'options.php' );load_template( $optionsfile );
 /**
  * Include Theme Customizer.
  *

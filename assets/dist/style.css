@@ -1,0 +1,42 @@
+.header-global .navbar .logo.navbar-brand 
+	{color:#FFF;font-size:1.25rem;letter-spacing:2px;}
+.header-global .headroom--not-top .logo.navbar-brand 
+	{color:#333;}
+.header-global .headroom--not-top .navbar-toggler-icon .navbar-toggler-bar 
+	{background:#333!important;}
+.header-global .navbar-transparent 
+	{position:absolute;top:0;width:100%;z-index:100;background-color:#30313485!important;border:0;box-shadow:none;}
+.header-global .headroom--not-top 
+	{box-shadow:inset 0 0 2px #c5c5c5d1;-webkit-backdrop-filter:saturate(200%) blur(30px);backdrop-filter:saturate(200%) blur(30px);background-color:hsla(0,0%,100%,.8)!important;position:fixed;}
+.header-global .navbar .nav-item .nav-link 
+	{font-weight:500;font-size:.8rem;}
+.header-global .navbar .nav-item .nav-link.active:before,
+	.navbar .nav-item .nav-link.active,
+	.navbar .nav-item .nav-link .nav-link:focus,
+	.navbar .nav-item .nav-link:hover 
+		{color:#FFF;background-color:hsla(0,0%,100%,.1);border-radius:10px;}
+.header-global .nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link 
+	{color:#495057;background-color:#fafafa;border-color:#dee2e6 #dee2e6 #fafafa}
+.header-global .navbar-light .navbar-nav .show>.nav-link,
+	.navbar-light .navbar-nav .active>.nav-link,
+	.navbar-light .navbar-nav .nav-link.show,
+	.navbar-light .navbar-nav .nav-link.active,
+	.boxmoe-user-page .navbar .active 
+	{border-radius:5px;color:#FFF;background-color:hsla(0,0%,100%,.1);}
+.header-global .navbar-light .navbar-nav .nav-link {color:#fff;border-radius:5px;}
+.header-global .navbar.navbar-transparent .nav-link,
+	.navbar.navbar-transparent .nav-link i,
+	.boxmoe-user-page .nav-link i 
+	{letter-spacing:2px;color:#fff;margin-right:5px;}
+.header-global .headroom--not-top.navbar .nav-link,
+.header-global .headroom--not-top.navbar .nav-link i 
+	{color:#333;}
+.header-global .headroom--not-top.navbar .nav-item .nav-link:hover,
+	.headroom--not-top.navbar-light .navbar-nav .nav-link.active 
+	{background-color:hsl(0deg 3% 54% / 10%);}
+.header-global .dropdown .dropdown-menu .dropdown-item+.dropdown-menu:before {transform:rotate(-90deg);left:-10px;top:5px;z-index:-1;transition:left .35s ease;}
+.header-global .dropdown .dropdown-menu:before {top:-21px;}
+.header-global .depth_0 .dropdown-toggle:after {content:"\f105";margin-left:5em;float:right;line-height:1.8;}
+.header-global .sign_f .nav-item .nav-link {background-color:hsla(0,0%,100%,.1);border-radius:10px;}
+.header-global .headroom--not-top .sign_f .nav-item .nav-link {background-color:hsl(0deg 0% 24% / 10%);}

@@ -18,6 +18,8 @@ Text Domain: boxmeow-ft
 
 /* From http://codex.wordpress.org/CSS */
 
+.header-global .navbar-transparent {position:absolute;top:0;width:100%;z-index:100;background-color:transparent!important;border:0;box-shadow:none;}
+
 .alignnone {
 	margin: 5px 20px 20px 0;
 }
