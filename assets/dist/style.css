@@ -14,7 +14,7 @@
 	.navbar .nav-item .nav-link.active,
 	.navbar .nav-item .nav-link .nav-link:focus,
 	.navbar .nav-item .nav-link:hover 
-		{color:#FFF;background-color:hsla(0,0%,100%,.1);border-radius:10px;}
+	{color:#FFF;background-color:hsla(0,0%,100%,.1);border-radius:10px;}
 .header-global .nav-tabs .nav-link.active,
 	.nav-tabs .nav-item.show .nav-link 
 	{color:#495057;background-color:#fafafa;border-color:#dee2e6 #dee2e6 #fafafa}
@@ -35,8 +35,13 @@
 .header-global .headroom--not-top.navbar .nav-item .nav-link:hover,
 	.headroom--not-top.navbar-light .navbar-nav .nav-link.active 
 	{background-color:hsl(0deg 3% 54% / 10%);}
-.header-global .dropdown .dropdown-menu .dropdown-item+.dropdown-menu:before {transform:rotate(-90deg);left:-10px;top:5px;z-index:-1;transition:left .35s ease;}
-.header-global .dropdown .dropdown-menu:before {top:-21px;}
-.header-global .depth_0 .dropdown-toggle:after {content:"\f105";margin-left:5em;float:right;line-height:1.8;}
-.header-global .sign_f .nav-item .nav-link {background-color:hsla(0,0%,100%,.1);border-radius:10px;}
-.header-global .headroom--not-top .sign_f .nav-item .nav-link {background-color:hsl(0deg 0% 24% / 10%);}
+.header-global .dropdown .dropdown-menu .dropdown-item+.dropdown-menu:before 
+	{transform:rotate(-90deg);left:-10px;top:5px;z-index:-1;transition:left .35s ease;}
+.header-global .dropdown .dropdown-menu:before 
+	{top:-21px;}
+.header-global .depth_0 .dropdown-toggle:after 
+	{content:"\f105";margin-left:5em;float:right;line-height:1.8;}
+.header-global .sign_f .nav-item .nav-link 
+	{background-color:hsla(0,0%,100%,.1);border-radius:10px;}
+.header-global .headroom--not-top .sign_f .nav-item .nav-link 
+	{background-color:hsl(0deg 0% 24% / 10%);}

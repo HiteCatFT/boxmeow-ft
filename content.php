@@ -108,7 +108,6 @@
 		<?php
 		endif;
 		?>
-
 		<a href="<?php the_permalink(); ?>" class="btn btn-secondary"><?php esc_html_e('more', 'boxmeow-ft'); ?></a>
 
 		<?php edit_post_link(__('Edit', 'boxmeow-ft'), '<span class="edit-link">', '</span>'); ?>
