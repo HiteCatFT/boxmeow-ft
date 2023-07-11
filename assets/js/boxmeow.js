@@ -1,9 +1,4 @@
 ! function ($) {
-  $(document).on('pjax:complete',
-    function () {
-      ajaxComt()
-      init()
-    })
   $(document).ready(function () {
     init()
   })
@@ -13,14 +8,15 @@
   }
 
   const headroom = () => {
-    if ($('.headroom')[0]) {
-      new Headroom(document.querySelector("#navbar-main"), {
-        offset: 0,
-        tolerance: {
-          up: 30,
-          down: 30
-        },
-      }).init()
-    }
+    var header = document.querySelector("#navbar-main-ft");
+
+    var headroom = new Headroom(header, {
+      tolerance: {
+        down: 10,
+        up: 20
+      },
+    })
+    headroom.init()
   }
+
 }(window.jQuery)

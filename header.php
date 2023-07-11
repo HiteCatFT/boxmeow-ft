@@ -4,19 +4,23 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link id="theme-style" href="/wordpress/wp-content/themes/boxmeow-ft/assets/dist/main.css" rel="stylesheet" />
 	<link id="theme-style" href="/wordpress/wp-content/themes/boxmeow-ft/assets/dist/style.css" rel="stylesheet" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- 引入 headroom -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+	<!-- 引入 jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<!-- 引入 Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+	<!-- 引入 自定義script -->
 	<script src="/wordpress/wp-content/themes/boxmeow-ft/assets/js/boxmeow.js"></script>
-	<script src="/wordpress/wp-content/themes/boxmeow-ft/assets/js/plugin.js"></script>
 </head>
 
 <body>
-	<header class="header-global">
-		<nav class="navbar navbar-expand-lg navbar-dark navbar-backgroud-ft">
+	<header class="header-global-ft">
+		<nav id="navbar-main-ft" class="headroom navbar navbar-expand-lg navbar-dark navbar-fixed-ft navbar-backgroud-ft">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">Navbar</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,78 +59,3 @@
 			</div>
 		</nav>
 	</header>
-
-	<!-- 
-	<?php wp_body_open(); ?>
-
-	<a href="#main" class="visually-hidden-focusable"><?php esc_html_e('Skip to main content', 'boxmeow-ft'); ?></a>
-
-	<div id="wrapper">
-		<header>
-			<nav id="header" class="navbar navbar-expand-md <?php echo esc_attr($navbar_scheme);
-																											if (isset($navbar_position) && 'fixed_top' === $navbar_position) : echo ' fixed-top';
-																											elseif (isset($navbar_position) && 'fixed_bottom' === $navbar_position) : echo ' fixed-bottom';
-																											endif;
-																											if (is_home() || is_front_page()) : echo ' home';
-																											endif; ?>">
-				<div class="container">
-					<a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-						<?php
-						$header_logo = get_theme_mod('header_logo'); // Get custom meta-value.
-
-						if (!empty($header_logo)) :
-						?>
-							<img src="<?php echo esc_url($header_logo); ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" />
-						<?php
-						else :
-							echo esc_attr(get_bloginfo('name', 'display'));
-						endif;
-						?>
-					</a>
-
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'boxmeow-ft'); ?>">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div id="navbar" class="collapse navbar-collapse">
-						<?php
-						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'menu_class'     => 'navbar-nav me-auto',
-								'container'      => '',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-								'theme_location' => 'main-menu',
-							)
-						);
-
-						if ('1' === $search_enabled) :
-						?>
-							<form class="search-form my-2 my-lg-0" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-								<div class="input-group">
-									<input type="text" name="s" class="form-control" placeholder="<?php esc_attr_e('Search', 'boxmeow-ft'); ?>" title="<?php esc_attr_e('Search', 'boxmeow-ft'); ?>" />
-									<button type="submit" name="submit" class="btn btn-outline-secondary"><?php esc_html_e('Search', 'boxmeow-ft'); ?></button>
-								</div>
-							</form>
-						<?php
-						endif;
-						?>
-					</div><!-- /.navbar-collapse -->
-	</div><!-- /.container -->
-	</nav><!-- /#header -->
-	</header>
-
-	<main id="main" class="container" <?php if (isset($navbar_position) && 'fixed_top' === $navbar_position) : echo ' style="padding-top: 100px;"';
-																		elseif (isset($navbar_position) && 'fixed_bottom' === $navbar_position) : echo ' style="padding-bottom: 100px;"';
-																		endif; ?>>
-		<?php
-		// If Single or Archive (Category, Tag, Author or a Date based page).
-		if (is_single() || is_archive()) :
-		?>
-			<div class="row">
-				<div class="col-md-8 col-sm-12">
-				<?php
-			endif;
-				?>
-				-->
