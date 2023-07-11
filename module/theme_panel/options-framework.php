@@ -65,8 +65,8 @@ endif;
  *
  * Not in a class to support backwards compatibility in themes.
  */
-if ( ! function_exists( 'of_get_option' ) ) :
-function of_get_option( $name, $default = false ) {
+if ( ! function_exists( 'get_option_ft' ) ) :
+function get_option_ft( $name, $default = false ) {
 
 	$option_name = '';
 

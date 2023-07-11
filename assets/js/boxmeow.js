@@ -11,9 +11,10 @@
     var header = document.querySelector("#navbar-main-ft");
 
     var headroom = new Headroom(header, {
+      offset: 100,
       tolerance: {
-        down: 10,
-        up: 20
+        down: 30,
+        up: 30
       },
     })
     headroom.init()

@@ -1,8 +1,9 @@
-/*Headroom css複寫*/
+/*Headroom複寫*/
 .headroom { transition: transform .25s ease-in-out; will-change: transform}
 .headroom--pinned { transform: translateY(0) }
 .headroom--unpinned { transform: translateY(-100%) }
 
-/*Navbar css*/
+/*Navbar*/
 .header-global-ft .navbar-fixed-ft { position: fixed; z-index: 10; right: 0; left: 0; top: 0 }
 .header-global-ft .navbar-backgroud-ft { background-color: #202124c2; }
+@media (min-width: 992px) { #offcanvasMenu { display: none; } }
