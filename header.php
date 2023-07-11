@@ -19,6 +19,7 @@
 </head>
 
 <body>
+	<!-- header -->
 	<header class="header-global-ft">
 		<nav id="navbar-main-ft" class="headroom navbar navbar-expand-lg navbar-dark navbar-fixed-ft navbar-backgroud-ft">
 			<div class="container-fluid">
@@ -29,30 +30,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Dropdown
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled">Disabled</a>
-						</li>
-					</ul>
+					<?php echo nav_menu_ft(); ?>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Search</button>
@@ -61,36 +39,14 @@
 			</div>
 		</nav>
 	</header>
+	<!-- 手機版 header -->
 	<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
 		<div class="offcanvas-header">
 			<h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Dropdown
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
-				</li>
-			</ul>
+			<?php nav_menu_ft(); ?>
 			<form class="d-flex">
 				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success" type="submit">Search</button>
