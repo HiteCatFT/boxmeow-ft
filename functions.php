@@ -4,6 +4,7 @@ define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/module/t
 require_once dirname( __FILE__ ) . '/module/theme_panel/options-framework.php';
 require_once get_stylesheet_directory() . '/module/config/fun-admin.php';
 require_once get_stylesheet_directory() . '/module/config/fun-global.php';
+require_once get_stylesheet_directory() . '/module/lib/bootstrap_5_wp_nav_menu_walker.php';
 $optionsfile = locate_template( 'options.php' );load_template( $optionsfile );
 /**
  * Include Theme Customizer.
