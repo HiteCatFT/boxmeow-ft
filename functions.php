@@ -495,22 +495,6 @@ if ( ! function_exists( 'boxmeow_ft_comment' ) ) {
 	add_filter( 'comment_form_defaults', 'boxmeow_ft_custom_commentform' );
 }
 
-if ( function_exists( 'register_nav_menus' ) ) {
-	/**
-	 * Nav menus.
-	 *
-	 * @since v1.0
-	 *
-	 * @return void
-	 */
-	register_nav_menus(
-		array(
-			'main-menu'   => 'Main Navigation Menu',
-			'footer-menu' => 'Footer Menu',
-		)
-	);
-}
-
 // Custom Nav Walker: wp_bootstrap_navwalker().
 $custom_walker = __DIR__ . '/inc/wp-bootstrap-navwalker.php';
 if ( is_readable( $custom_walker ) ) {

@@ -16,10 +16,15 @@
 
 	<!-- 引入 自定義script -->
 	<script src="/wordpress/wp-content/themes/boxmeow-ft/assets/js/boxmeow.js"></script>
+	<script>
+		$(document).ready(function() {
+			console.log(123, <?php echo nav_menu_ft(); ?>);
+		})
+	</script>
 </head>
 
 <body>
-	<!-- header -->
+	<!-- 網頁版header -->
 	<header class="header-global-ft">
 		<nav id="navbar-main-ft" class="headroom navbar navbar-expand-lg navbar-dark navbar-fixed-ft navbar-backgroud-ft">
 			<div class="container-fluid">
@@ -30,7 +35,9 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
-					<?php echo nav_menu_ft(); ?>
+					<ul class="navbar-nav me-auto">
+						<?php echo nav_menu_ft(); ?>
+					</ul>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success" type="submit">Search</button>
@@ -46,7 +53,7 @@
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body">
-			<?php nav_menu_ft(); ?>
+			<?php echo nav_menu_ft(); ?>
 			<form class="d-flex">
 				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success" type="submit">Search</button>
