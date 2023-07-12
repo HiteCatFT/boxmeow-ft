@@ -12,9 +12,16 @@ function logo_ft()
   return $src;
 }
 
+if (function_exists('register_nav_menus')) {
+  register_nav_menus(
+    array(
+      'navs'   => '導航爛d(`･∀･)b',
+    )
+  );
+}
 function nav_menu_ft($location = 'navs', $dropdowns = 'dropdown')
 {
-  return '' . str_replace("</ul></div>", "", preg_replace(
+  $menu = '' . str_replace("</ul></div>", "", preg_replace(
     "/<div[^>]*><ul[^>]*>/",
     "",
     wp_nav_menu(array(
@@ -26,4 +33,5 @@ function nav_menu_ft($location = 'navs', $dropdowns = 'dropdown')
       'echo' => false
     ))
   )) . '';
+  return $menu;
 }
