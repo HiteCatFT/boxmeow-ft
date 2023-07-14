@@ -27,7 +27,7 @@
 	<!-- 網頁版header -->
 	<header class="header-global-ft">
 		<nav id="navbar-main-ft" class="headroom navbar navbar-expand-lg navbar-dark navbar-fixed-ft navbar-backgroud-ft">
-			<div class="container-fluid">
+			<div class="container container-ft">
 				<a class="navbar-brand" href="<?php echo home_url(); ?>" title="boxmeow_ft">
 					<?php echo logo_ft(); ?>
 				</a>
@@ -38,10 +38,6 @@
 					<ul class="navbar-nav me-auto">
 						<?php echo nav_menu_ft(); ?>
 					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
 				</div>
 			</div>
 		</nav>
@@ -54,9 +50,5 @@
 		</div>
 		<div class="offcanvas-body">
 			<?php echo nav_menu_ft(); ?>
-			<form class="d-flex">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form>
 		</div>
 	</div>

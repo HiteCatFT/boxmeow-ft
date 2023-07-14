@@ -6,4 +6,5 @@
 /*Navbar*/
 .header-global-ft .navbar-fixed-ft { position: fixed; z-index: 10; right: 0; left: 0; top: 0 }
 .header-global-ft .navbar-backgroud-ft { background-color: #202124c2; }
-@media (min-width: 992px) { #offcanvasMenu { display: none; } }
+@media (min-width: 1700px) { .header-global-ft .container-ft { max-width: 1600px; } }
+@media (min-width: 768px) { #offcanvasMenu { display: none; } }
