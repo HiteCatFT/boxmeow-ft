@@ -1,4 +1,4 @@
-/*Headroom複寫*/
+/*Headroom*/
 .headroom { transition: transform .25s ease-in-out; will-change: transform}
 .headroom--pinned { transform: translateY(0) }
 .headroom--unpinned { transform: translateY(-100%) }
@@ -6,5 +6,18 @@
 /*Navbar*/
 .header-global-ft .navbar-fixed-ft { position: fixed; z-index: 10; right: 0; left: 0; top: 0 }
 .header-global-ft .navbar-backgroud-ft { background-color: #202124c2; }
+  /*hover底下橙色條*/
+.header-global-ft .navbar-fixed-ft .nav-item { 
+  position: relative; list-style: none; 
+  margin-right: 10px; /*li間隔*/
+}
+.header-global-ft .navbar-fixed-ft .nav-item::after { content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 4px; background-color: #f09368; transition: width 0.3s; }
+.header-global-ft .navbar-fixed-ft .nav-item:hover::after { width: 100%; }
+  /*hover文字*/
+.header-global-ft .navbar-fixed-ft .nav-item .nav-link { color: #fff; transition: color 1s; }
+.header-global-ft .navbar-fixed-ft .nav-item .nav-link:hover { color: #ef8857; }
+  /*當前Menu*/
+.header-global-ft .navbar-fixed-ft .nav-item.current-menu-item .nav-link { color: #ef8857 !important; }
+.header-global-ft .navbar-fixed-ft .nav-item.current-menu-item::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background-color: #f09368; }
 @media (min-width: 1700px) { .header-global-ft .container-ft { max-width: 1600px; } }
 @media (min-width: 768px) { #offcanvasMenu { display: none; } }
