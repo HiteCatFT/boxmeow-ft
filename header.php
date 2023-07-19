@@ -52,3 +52,28 @@
 			<?php echo nav_menu_ft(); ?>
 		</div>
 	</div>
+
+	<section class="section-blog-cover section-shaped my-0" style="background-image: url('/wordpress/wp-content/themes/boxmeow-ft/assets/images/7.jpg');">
+		<div class="banner-box-ft">
+			<div class="banner-title-ft">
+				<span>BlogName</span>
+			</div>
+			<div class="banner-underline-ft"></div>
+			<div class="banner-text-ft">
+				<span>Blog Text</span>
+			</div>
+		</div>
+		<div class="separator separator-bottom separator-skew">
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(30,30,30,0.7)"></use>
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(30,30,30,0.5)"></use>
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(30,30,30,0.3)"></use>
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="#000"></use>
+				</g>
+			</svg>
+		</div>
+	</section>
