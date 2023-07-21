@@ -53,7 +53,7 @@
 		</div>
 	</div>
 
-	<section class="section-blog-cover section-shaped my-0" style="background-image: url('/wordpress/wp-content/themes/boxmeow-ft/assets/images/7.jpg');">
+	<section class="section-blog-cover-ft section-shaped-ft my-0" style="background-image: url('/wordpress/wp-content/themes/boxmeow-ft/assets/images/7.jpg');">
 		<div class="banner-box-ft">
 			<div class="banner-title-ft">
 				<span>BlogName</span>

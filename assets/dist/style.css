@@ -12,7 +12,7 @@
   margin-right: 10px; /*li間隔*/
 }
 .header-global-ft .navbar-fixed-ft .nav-item::after { content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 4px; background-color: #f09368; transition: width 0.3s; 
-  border-radius: 30%; /*這參數好好笑, 而且看起來好看, 有種手寫的感覺030*/ 
+  border-radius: 30%; /*這參數好好玩, 而且看起來好看, 有種手寫的感覺030*/ 
 }
 .header-global-ft .navbar-fixed-ft .nav-item:hover::after { width: 100%; }
   /*hover文字*/
@@ -25,10 +25,10 @@
 @media (min-width: 768px) { #offcanvasMenu { display: none; } }
 
 /*Banner section*/
-.section-blog-cover { height: 100vh; background-size: cover; background-position: 70% 70%; display: flex; justify-content: center; align-items: center; }
-.section-shaped {position:relative;overflow:hidden;}
-.separator-skew {height:100px;}
-.separator-bottom {top:auto;bottom:0;}
+.section-blog-cover-ft { height: 100vh; background-size: cover; background-position: 70% 70%; display: flex; justify-content: center; align-items: center; }
+.section-shaped-ft { position:relative; overflow:hidden; }
+.separator-skew { height:100px; }
+.separator-bottom { top:auto; bottom:0; }
 .separator,.separator svg {position:absolute;pointer-events:none;}
 .separator {top:auto;left:0;right:0;width:100%;z-index:1;transform:translateZ(0);overflow:hidden;}
 .section-shaped::after, .section-shaped:before {position:absolute;width:100%;height:100%;left:0;top:0;content:"";background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAKUlEQVQImU3IMREAIAgAwJfNkQCEsH8cijjpMf6vnXlQaIiJFx+omEBfmqIEZLe2jzcAAAAASUVORK5CYII=);}
@@ -45,8 +45,8 @@
 }
 
 /*Banner box*/
-.section-blog-cover .banner-box-ft { z-index: 10; }
-.section-blog-cover .banner-box-ft .banner-title-ft { font-size: 30px; color: rgba(255, 255, 255, 1); transition: color 1s; font-weight: 700; padding-left: 20Px; padding-right: 20px; }
-.section-blog-cover .banner-box-ft .banner-title-ft:hover { color: rgba(255, 255, 255, 0.5); }
-.section-blog-cover .banner-box-ft .banner-underline-ft { padding-top: 20px; border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
-.section-blog-cover .banner-box-ft .banner-text-ft { padding-top: 10px; color: rgba(255, 255, 255, 1); }
+.section-blog-cover-ft .banner-box-ft { z-index: 10; }
+.section-blog-cover-ft .banner-box-ft .banner-title-ft { font-size: 30px; color: rgba(255, 255, 255, 1); transition: color 1s; font-weight: 700; padding-left: 20Px; padding-right: 20px; }
+.section-blog-cover-ft .banner-box-ft .banner-title-ft:hover { color: rgba(255, 255, 255, 0.5); }
+.section-blog-cover-ft .banner-box-ft .banner-underline-ft { padding-top: 20px; border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+.section-blog-cover-ft .banner-box-ft .banner-text-ft { padding-top: 10px; color: rgba(255, 255, 255, 1); }
